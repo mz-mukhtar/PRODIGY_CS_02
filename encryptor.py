@@ -1,15 +1,5 @@
 from PIL import Image
 
-def load_and_show_image(path):
-    # Open the image
-    img = Image.open(path)
-    # Show the image in default image viewer
-    img.show()
-
-if __name__ == "__main__":
-    
-    load_and_show_image("sample.jpg")
-
 def encrypt_image(input_path, output_path, key):
     img = Image.open(input_path)
     img = img.convert("RGB")
